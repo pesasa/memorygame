@@ -1,0 +1,20 @@
+/*********************
+ * Memory game css
+ *********************/
+
+.cardlist {
+    list-style: none;
+}
+
+.cardlist li {
+    display: inline-block;
+}
+
+.memorygame-card {
+    border: 1px solid #666;
+    background-color: #ffa;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 10px;
+}

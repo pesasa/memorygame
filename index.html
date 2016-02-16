@@ -3,93 +3,126 @@
     <head>
         <title>Memorygame</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" media="all" href="style.css">
     </head>
     <body>
         <h1>Memorygame</h1>
         <div class="gamearea">
         </div>
-        <ul>
+        <ul class="cardlist">
             <li>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-circle">
-                    <circle fill="red" stroke="none" cx="15" cy="15" r="10"></circle>
-                </svg>
+                <div class="memorygame-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-circle">
+                        <circle fill="red" stroke="none" cx="15" cy="15" r="10"></circle>
+                    </svg>
+                </div>
             </li>
             <li>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-rectangle">
-                    <rect fill="blue" stroke="none" x="5" y="5" width="20" height="20"></rect>
-                </svg>
+                <div class="memorygame-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-rectangle">
+                        <rect fill="blue" stroke="none" x="5" y="5" width="20" height="20"></rect>
+                    </svg>
+                </div>
             </li>
             <li>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-triangle">
-                    <path fill="green" stroke="none" d="M15 5 l10 17.3 h-20z"></path>
-                </svg>
+                <div class="memorygame-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-triangle">
+                        <path fill="green" stroke="none" d="M15 5 l10 17.3 h-20z"></path>
+                    </svg>
+                </div>
             </li>
             <li>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-star">
-                    <path style="stroke: #ca0; fill: #fd0;" d="M15 2 l3.7 8 l9.3 1 l-7 6 l2 9 l-8 -4.8 l-8 4.8 l2 -9 l-7 -6 l9.3 -1z"></path>
-                </svg>
+                <div class="memorygame-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-star">
+                        <path style="stroke: #ca0; fill: #fd0;" d="M15 2 l3.7 8 l9.3 1 l-7 6 l2 9 l-8 -4.8 l-8 4.8 l2 -9 l-7 -6 l9.3 -1z"></path>
+                    </svg>
+                </div>
             </li>
             <li>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-gear">
-                    <path style="stroke: none; fill: #81420E;" d="M17.26 2.2 a13 13 0 0 1 7.7 4.44 a3 8 60 0 0 2.256 3.91 a13 13 0 0 1 0 8.89 a3 8 120 0 0 -2.256 3.91 a13 13 0 0 1 -7.7 4.44 a3 8 0 0 0 -4.52 0 a13 13 0 0 1 -7.7 -4.44 a3 8 60 0 0 -2.256 -3.91 a13 13 0 0 1 0 -8.89 a3 8 120 0 0 2.256 -3.91 a13 13 0 0 1 7.7 -4.44 a3 8 0 0 0 4.52 0 M15 11 a4 4 0 0 0 0 8 a4 4 0 0 0 0 -8 z"></path>
-                </svg>
+                <div class="memorygame-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-gear">
+                        <path style="stroke: none; fill: #81420E;" d="M17.26 2.2 a13 13 0 0 1 7.7 4.44 a3 8 60 0 0 2.256 3.91 a13 13 0 0 1 0 8.89 a3 8 120 0 0 -2.256 3.91 a13 13 0 0 1 -7.7 4.44 a3 8 0 0 0 -4.52 0 a13 13 0 0 1 -7.7 -4.44 a3 8 60 0 0 -2.256 -3.91 a13 13 0 0 1 0 -8.89 a3 8 120 0 0 2.256 -3.91 a13 13 0 0 1 7.7 -4.44 a3 8 0 0 0 4.52 0 M15 11 a4 4 0 0 0 0 8 a4 4 0 0 0 0 -8 z"></path>
+                    </svg>
+                </div>
             </li>
             <li>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-cross">
-                    <path style="stroke: none; fill: #a00;" d="M4 7 a1.5 1.5 0 0 1 3 -3 l8 8 l8 -8 a1.5 1.5 0 0 1 3 3 l-8 8 l8 8 a1.5 1.5 0 0 1 -3 3 l-8 -8 l-8 8 a1.5 1.5 0 0 1 -3 -3 l8 -8 l-8 -8 z"></path>
-                </svg>
+                <div class="memorygame-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-cross">
+                        <path style="stroke: none; fill: #a00;" d="M4 7 a1.5 1.5 0 0 1 3 -3 l8 8 l8 -8 a1.5 1.5 0 0 1 3 3 l-8 8 l8 8 a1.5 1.5 0 0 1 -3 3 l-8 -8 l-8 8 a1.5 1.5 0 0 1 -3 -3 l8 -8 l-8 -8 z"></path>
+                    </svg>
+                </div>
             </li>
             <li>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 50 50" class="memorycard-wrench">
-                    <path style="stroke: none; fill: #00a;" d="M35 5 a12 12 0 1 0 9 9 l-9 9 a10 10 0 0 1 -9 -9 l9 -9z m-15 17.5 l-17 17 a2 2 0 0 0 7 7 l17 -17z m-16 18 a2 2 0 0 1 5 5 a2 2 0 0 1 -5 -5z"></path>
-                </svg>
+                <div class="memorygame-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 50 50" class="memorycard-wrench">
+                        <path style="stroke: none; fill: #00a;" d="M35 5 a12 12 0 1 0 9 9 l-9 9 a10 10 0 0 1 -9 -9 l9 -9z m-15 17.5 l-17 17 a2 2 0 0 0 7 7 l17 -17z m-16 18 a2 2 0 0 1 5 5 a2 2 0 0 1 -5 -5z"></path>
+                    </svg>
+                </div>
             </li>
             <li>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-pencil">
-                    <path style="stroke: none; fill: #050;" d="M3 27 l10 -4 l15 -15 a7 7 0 0 0 -6 -6 l-15 15z m5 -2.4 a3 3 0 0 0 -2.6 -2.6 l2 -5 a8 8 0 0 1 5.6 5.6 z"></path>
-                </svg>
+                <div class="memorygame-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-pencil">
+                        <path style="stroke: none; fill: #050;" d="M3 27 l10 -4 l15 -15 a7 7 0 0 0 -6 -6 l-15 15z m5 -2.4 a3 3 0 0 0 -2.6 -2.6 l2 -5 a8 8 0 0 1 5.6 5.6 z"></path>
+                    </svg>
+                </div>
             </li>
             <li>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-eye">
-                    <path style="stroke: none; fill: blue;" d="M3 15 a13 13 0 0 0 24 0 a13 13 0 0 0 -24 0z m1 0 a13 13 0 0 1 22 0 a13 13 0 0 1 -22 0z m6 -1 a5 5 0 0 0 10 0 a5 5 0 0 0 -10 0z m1.5 -1.6 a3 3 0 0 1 3 -2.1 a2 0.8 0 0 1 0 1 a3 3 0 0 0 -1.8 1.2 a0.5 0.5 0 0 1 -1.16 0z"></path>
-                </svg>
+                <div class="memorygame-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-eye">
+                        <path style="stroke: none; fill: blue;" d="M3 15 a13 13 0 0 0 24 0 a13 13 0 0 0 -24 0z m1 0 a13 13 0 0 1 22 0 a13 13 0 0 1 -22 0z m6 -1 a5 5 0 0 0 10 0 a5 5 0 0 0 -10 0z m1.5 -1.6 a3 3 0 0 1 3 -2.1 a2 0.8 0 0 1 0 1 a3 3 0 0 0 -1.8 1.2 a0.5 0.5 0 0 1 -1.16 0z"></path>
+                    </svg>
+                </div>
             </li>
             <li>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-music">
-                    <path style="stroke: none;" d="M11 23 a4 2 -15 1 1 -2 -1 l0 -14 l15 -4 l0 16 a4 2 -15 1 1 -2 -1 l0 -11 l-11 3.5z"></path>
-                </svg>
+                <div class="memorygame-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-music">
+                        <path style="stroke: none;" d="M11 23 a4 2 -15 1 1 -2 -1 l0 -14 l15 -4 l0 16 a4 2 -15 1 1 -2 -1 l0 -11 l-11 3.5z"></path>
+                    </svg>
+                </div>
             </li>
             <li>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-moon">
-                    <path style="stroke: #ca0; fill: #fd0;" d="M22 8 a10 10 0 1 0 0 14 a7 7 0 0 1 0 -14z"></path>
-                </svg>
+                <div class="memorygame-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-moon">
+                        <path style="stroke: #ca0; fill: #fd0;" d="M22 8 a10 10 0 1 0 0 14 a7 7 0 0 1 0 -14z"></path>
+                    </svg>
+                </div>
             </li>
             <li>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-link">
-                    <path style="stroke: none; fill: #006;" d="M14.5 11.5 a3 3 0 0 1 0 -4 l5 -5 a4 4 0 0 1 8 8 l-5 5 a3 3 0 0 1 -4 0 l6 -6 a2 2 0 0 0 -4 -4z m4 -3 a2 2 0 0 1 3 3 l-10 10 a2 2 0 0 1 -3 -3z m-3 10 a4 4 0 0 1 0 4 l-5 5 a3 3 0 0 1 -8 -8 l5 -5 a3 3 0 0 1 4 0 l-6 6 a2 2 0 0 0 4 4z"></path>
-                </svg>
+                <div class="memorygame-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-link">
+                        <path style="stroke: none; fill: #006;" d="M14.5 11.5 a3 3 0 0 1 0 -4 l5 -5 a4 4 0 0 1 8 8 l-5 5 a3 3 0 0 1 -4 0 l6 -6 a2 2 0 0 0 -4 -4z m4 -3 a2 2 0 0 1 3 3 l-10 10 a2 2 0 0 1 -3 -3z m-3 10 a4 4 0 0 1 0 4 l-5 5 a3 3 0 0 1 -8 -8 l5 -5 a3 3 0 0 1 4 0 l-6 6 a2 2 0 0 0 4 4z"></path>
+                    </svg>
+                </div>
             </li>
             <li>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-grid">
-                    <path style="stroke: none; fill: black;" d="M3 3 l6 0 l0 6 l-6 0z m9 0 l6 0 l0 6 l-6 0z m9 0 l6 0 l0 6 l-6 0z m-18 9 l6 0 l0 6 l-6 0z m9 0 l6 0 l0 6 l-6 0z m9 0 l6 0 l0 6 l-6 0z m-18 9 l6 0 l0 6 l-6 0z m9 0 l6 0 l0 6 l-6 0z m9 0 l6 0 l0 6 l-6 0z"></path>
-                </svg>
+                <div class="memorygame-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-grid">
+                        <path style="stroke: none; fill: black;" d="M3 3 l6 0 l0 6 l-6 0z m9 0 l6 0 l0 6 l-6 0z m9 0 l6 0 l0 6 l-6 0z m-18 9 l6 0 l0 6 l-6 0z m9 0 l6 0 l0 6 l-6 0z m9 0 l6 0 l0 6 l-6 0z m-18 9 l6 0 l0 6 l-6 0z m9 0 l6 0 l0 6 l-6 0z m9 0 l6 0 l0 6 l-6 0z"></path>
+                    </svg>
+                </div>
             </li>
             <li>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 80 80" class="memorycard-stars">
-                    <path style="stroke: none; fill: #fd0;" d="M15 27 l3.7 8 l9.3 1 l-7 6 l2 9 l-8 -4.8 l-8 4.8 l2 -9 l-7 -6 l9.3 -1z"></path>
-                    <path style="stroke: none; fill: #fd0;" d="M40 27 l3.7 8 l9.3 1 l-7 6 l2 9 l-8 -4.8 l-8 4.8 l2 -9 l-7 -6 l9.3 -1z"></path>
-                    <path style="stroke: none; fill: #fd0;" d="M65 27 l3.7 8 l9.3 1 l-7 6 l2 9 l-8 -4.8 l-8 4.8 l2 -9 l-7 -6 l9.3 -1z"></path>
-                </svg>
+                <div class="memorygame-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 80 80" class="memorycard-stars">
+                        <path style="stroke: none; fill: #fd0;" d="M15 27 l3.7 8 l9.3 1 l-7 6 l2 9 l-8 -4.8 l-8 4.8 l2 -9 l-7 -6 l9.3 -1z"></path>
+                        <path style="stroke: none; fill: #fd0;" d="M40 27 l3.7 8 l9.3 1 l-7 6 l2 9 l-8 -4.8 l-8 4.8 l2 -9 l-7 -6 l9.3 -1z"></path>
+                        <path style="stroke: none; fill: #fd0;" d="M65 27 l3.7 8 l9.3 1 l-7 6 l2 9 l-8 -4.8 l-8 4.8 l2 -9 l-7 -6 l9.3 -1z"></path>
+                    </svg>
+                </div>
             </li>
             <li>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-menu">
-                    <path style="stroke: none; fill: black;" d="M5 4 l20 0 a2.5 2.5 0 0 1 0 5 l-20 0 a2.5 2.5 0 0 1 0 -5z m0 9 l20 0 a2.5 2.5 0 0 1 0 5 l-20 0 a2.5 2.5 0 0 1 0 -5z m0 9 l20 0 a2.5 2.5 0 0 1 0 5 l-20 0 a2.5 2.5 0 0 1 0 -5z"></path>
-                </svg>
+                <div class="memorygame-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-menu">
+                        <path style="stroke: none; fill: black;" d="M5 4 l20 0 a2.5 2.5 0 0 1 0 5 l-20 0 a2.5 2.5 0 0 1 0 -5z m0 9 l20 0 a2.5 2.5 0 0 1 0 5 l-20 0 a2.5 2.5 0 0 1 0 -5z m0 9 l20 0 a2.5 2.5 0 0 1 0 5 l-20 0 a2.5 2.5 0 0 1 0 -5z"></path>
+                    </svg>
+                </div>
             </li>
             <li>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-disk">
-                    <path style="stroke: none; fill: #00a;" d="M1 1 l23 0 l5 5 l0 23 l-28 0z m5 2 l0 8 l17 0 l0 -8z m12 1 l3 0 l0 6 l-3 0z m-13 10 l0 14 l20 0 l0 -14z m3 3 l14 0 l0 2 l-14 0z m0 3 l14 0 l0 2 l-14 0z m0 3 l14 0 l0 2 l-14 0z"></path>
-                </svg>
+                <div class="memorygame-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100" viewBox="0 0 30 30" class="memorycard-disk">
+                        <path style="stroke: none; fill: #00a;" d="M1 1 l23 0 l5 5 l0 23 l-28 0z m5 2 l0 8 l17 0 l0 -8z m12 1 l3 0 l0 6 l-3 0z m-13 10 l0 14 l20 0 l0 -14z m3 3 l14 0 l0 2 l-14 0z m0 3 l14 0 l0 2 l-14 0z m0 3 l14 0 l0 2 l-14 0z"></path>
+                    </svg>
+                </div>
             </li>
         </ul>
     </body>
