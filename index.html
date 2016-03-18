@@ -4,9 +4,24 @@
         <title>Memorygame</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" media="all" href="style.css">
+        <script type="text/javascript" src="jquery-1.12.2.min.js"></script>
+        <script type="text/javascript" src="memory.js"></script>
     </head>
     <body>
         <h1>Memorygame</h1>
+        <div class="controls">
+            <button id="startgame">Start</button>
+        </div>
+        <div class="scorearea">
+            <div class="gamemoves">
+                <span>Moves:</span>
+                <span id="gamescore">0</span>
+            </div>
+            <div class="gamepairs">
+                <span>Pairs:</span>
+                <span id="gamepairs">0</span>
+            </div>
+        </div>
         <div class="gamearea">
         </div>
         <ul class="cardlist">
