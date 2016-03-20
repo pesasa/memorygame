@@ -61,13 +61,10 @@
     transform: rotateY(180deg);
     backface-visibility: hidden;
 }
-.memcard.cardopen .memcard-front {
-}
+
 .memcard .memcard-back {
     transform: rotateY(0deg);
     backface-visibility: hidden;
-}
-.memcard.cardopen .memcard-back {
 }
 
 .memcard.cardopen:not(.locked) {

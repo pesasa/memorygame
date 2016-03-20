@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Memorygame</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" media="all" href="memory-oo.css">
+        <script type="text/javascript" src="jquery-1.12.2.min.js"></script>
+        <script type="text/javascript" src="memory-oo.js"></script>
+    </head>
+    <body>
+        <h1>Memorygame</h1>
+        <div id="memgame"></div>
+        <script type="text/javascript">
+            var game = new Memgame($('#memgame'));
+            game.init();
+        </script>
+    </body>
+</html>
