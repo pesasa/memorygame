@@ -122,7 +122,7 @@ Memgame.prototype.cardturn = function(data){
                     game.timeoutFunction = null;
                 };
                 // Do closing with a delay.
-                this.timeout = setTimeout(this.timeoutFunction, CLOSE_DEALY);
+                this.timeout = setTimeout(this.timeoutFunction, CLOSE_DELAY);
             };
             this.status = 0;
             // Update the score on the screen.
