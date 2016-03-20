@@ -82,6 +82,7 @@ Memgame.prototype.start = function(){
     this.paircount = 0;
     this.status = 0;
     this.updateScore();
+    this.initCards();
     this.shuffle();
     this.deal();
 };
