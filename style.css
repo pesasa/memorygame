@@ -36,6 +36,7 @@
     position: relative;
     width: 120px;
     height: 120px;
+    border-radius: 10px;
     transform-style: preserve-3d;
     transition: transform 1s;
     transform: rotateY(0deg);
@@ -67,4 +68,8 @@
     backface-visibility: hidden;
 }
 .memcard.cardopen .memcard-back {
+}
+
+.memcard.cardopen:not(.locked) {
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.5);
 }
